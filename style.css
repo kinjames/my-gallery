@@ -7,7 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
-
+html body {
+    min-height: 100vh;
+    width: 100%;
+}
 
 ul {
     text-decoration: none;
@@ -23,7 +26,7 @@ p {
 
 li {
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     font-size: 12px;
     background-color: #E5E5E5;
     border-radius: 10px;
@@ -38,7 +41,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     color: #000000;
 }
 
@@ -48,10 +51,12 @@ span {
     font-size: 12px;
 }
 
+
 .container {
     width: 1140px;
     margin: 0 auto;
     font-size: 16px;
+    overflow: hidden;
 }
 
 .header {
@@ -59,8 +64,8 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 
@@ -81,12 +86,11 @@ span {
 .gallery {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3, 18rem);
-    grid-template-rows: repeat(3, 18rem);
+    grid-template-columns: repeat(3, 9rem);
+    grid-template-rows: repeat(3, 9rem);
     justify-content: center;
     grid-column-gap: 15px;
     grid-row-gap: 15px;
-    margin-bottom: 30px;
 }
 
 .gallery img {
@@ -107,7 +111,7 @@ span {
 .img4 { grid-area: 3 / 1 / 4 / 2; }
 .img5 { grid-area: 3 / 2 / 4 / 3; }
 .img6 { grid-area: 2 / 3 / 4 / 4; 
-    width: 97%;
+    width: 98%;
 }
 
 
@@ -117,6 +121,7 @@ span {
             display: flex;
             flex-direction: column;
             overflow: hidden;
+            height: 100vh;
         }
 
         .gallery {
@@ -134,5 +139,12 @@ span {
 
         .name {
             font-size: 18px;
+        }
+
+        .img6 { 
+            width: 98%;
+        }
+        a {
+            padding: 20px;
         }
     }
